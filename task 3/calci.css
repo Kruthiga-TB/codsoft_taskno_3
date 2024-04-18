@@ -1,0 +1,70 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  margin-top:100px;
+}
+
+.body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calci{
+  display: grid;
+  grid-template-columns: repeat(4,60px);
+  box-shadow: 0px 0px 10px 10px lightgrey;
+}
+
+input{
+  grid-column: span 4;
+  height:50px;
+  box-shadow: inset 0px 0px 10px 3px lightgray;
+  border:none;
+  border-radius:15px;
+  margin-bottom: 10px;
+  text-align: right;
+  padding-right: 13px;
+  font-size: 25px;
+  color: rgb(56, 56, 56);
+
+}
+
+.calci{
+  border-radius:20px;
+  padding:10px;
+}
+
+button{
+  border-radius:8px;
+  border:none;
+  background-color: rgb(234, 234, 234);
+  padding:10px;
+  margin:4px;
+  font-size: 15px;
+}
+
+button:active{
+  background-color: rgb(183, 181, 181);
+}
+
+.operator{
+  background-color: rgb(211, 239, 249);
+}
+
+.operator:active{
+  background-color: lightblue;
+}
+
+.equal{
+  grid-column: span 2;
+  background-color: rgb(179, 203, 211);
+}
+
+.equal:active{
+  background-color: rgb(124, 153, 163);
+}
